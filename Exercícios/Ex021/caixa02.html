@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags ( Divs Semânticas)</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightslategrey;
+            margin: 0px;
+        }
+        header{
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 6px 6px 7px 2px rgba(0, 0, 0, 0.486);
+
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 4px;
+            text-align: center;
+            margin: 0px;
+        }
+        article{
+            background-color:gray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(65, 61, 61);
+            color: white;
+        }
+        nav{
+            background-color: rgb(109, 109, 109);
+            padding: 3px;
+            box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.5);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: red;  
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 5px 3px rgb(0 0 0 / 42%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <h2>Clima</h2>
+        </section>
+        <section id="Notícias">
+            <article>
+                <h3>Notícia sobre o Tempo severo</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam similique eligendi soluta vitae aliquid, unde, pariatur laborum rem quis repellat voluptatem corporis eveniet officiis accusantium harum sapiente qui excepturi!</p>
+                <aside> 
+                    <p>Artigo escrito por Luciana Diel</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Curso em Vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
